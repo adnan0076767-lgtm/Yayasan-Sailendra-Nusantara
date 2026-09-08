@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Yayasan Sailendra Nusantara | Membangun Generasi, Menguatkan Negeri</title>
+
+  <meta name="description" content="Website profil Yayasan Sailendra Nusantara, yayasan yang bergerak dalam bidang pendidikan, sosial, kemanusiaan, pemberdayaan masyarakat, dan pengembangan generasi.">
+
+  <meta name="keywords" content="Yayasan Sailendra Nusantara, yayasan, pendidikan, sosial, kemanusiaan, pemberdayaan masyarakat">
+
+  <meta name="author" content="Yayasan Sailendra Nusantara">
+
+  <meta name="theme-color" content="#0b1220">
+
+  <meta property="og:title" content="Yayasan Sailendra Nusantara">
+  <meta property="og:description" content="Membangun Generasi, Menguatkan Negeri.">
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --dark: #0b1220;
+      --dark2: #111827;
+      --gold: #d6a84f;
+      --gold-light: #f0cf83;
+      --white: #ffffff;
+      --text: #334155;
+      --light: #f8fafc;
+      --border: #e2e8f0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* =========================
+       NAVBAR
+    ========================= */
+
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+      background: rgba(11, 18, 32, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: white;
+    }
+
+    .logo-symbol {
+      width: 42px;
+      height: 42px;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .logo-text strong {
+      display: block;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+
+    .logo-text span {
+      display: block;
+      font-size: 10px;
+      color: #cbd5e1;
+      letter-spacing: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #e2e8f0;
+      font-size: 13px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 100vh;
+      padding: 150px 25px 100px;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(214,168,79,0.15), transparent 30%),
+        linear-gradient(135deg, #07101f, #111827 55%, #172033);
+      color: white;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      width: 100%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 7px 15px;
+      border: 1px solid rgba(214,168,79,0.5);
+      border-radius: 30px;
+      color: var(--gold-light);
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #cbd5e1;
+      font-size: 17px;
+      margin-bottom: 35px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 13px 23px;
+      border-radius: 7px;
+      font-weight: bold;
+      font-size: 14px;
+      transition: 0.3s;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: #111827;
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border: 1px solid #64748b;
+      color: white;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold-light);
+    }
+
+    .hero-card {
+      position: relative;
+      min-height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circle-main {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 1px solid rgba(214,168,79,0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .circle-main::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 1px solid rgba(214,168,79,0.25);
+    }
+
+    .circle-content {
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .circle-content .big {
+      font-size: 70px;
+      color: var(--gold);
+      font-weight: bold;
+    }
+
+    .circle-content h3 {
+      font-size: 17px;
+      letter-spacing: 2px;
+    }
+
+    .circle-content p {
+      font-size: 11px;
+      color: #94a3b8;
+      margin: 5px 0 0;
+    }
+
+    /* =========================
+       GENERAL
+    ========================= */
+
+    section {
+      padding: 90px 25px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 55px;
+    }
+
+    .section-label {
+      color: #b4872e;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .section-header h2 {
+      font-size: 38px;
+      color: var(--dark);
+      margin-bottom: 14px;
+    }
+
+    .section-header p {
+      color: #64748b;
+    }
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-box {
+      padding: 40px;
+      background: var(--light);
+      border-left: 4px solid var(--gold);
+      border-radius: 10px;
+    }
+
+    .about-box h3 {
+      color: var(--dark);
+      font-size: 25px;
+      margin-bottom: 15px;
+    }
+
+    .about-box p {
+      margin-bottom: 15px;
+      color: #64748b;
+    }
+
+    .about-list {
+      list-style: none;
+    }
+
+    .about-list li {
+      margin: 12px 0;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .about-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #b4872e;
+      font-weight: bold;
+    }
+
+    /* =========================
+       VISION MISSION
+    ========================= */
+
+    .vision {
+      background: var(--light);
+    }
+
+    .vision-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .vision-card {
+      background: white;
+      padding: 35px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      transition: 0.3s;
+    }
+
+    .vision-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(15,23,42,0.08);
+    }
+
+    .vision-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      background: #f8efd9;
+      color: #9a7228;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+
+    .vision-card h3 {
+      color: var(--dark);
+      margin-bottom: 12px;
+    }
+
+    /* =========================
+       LEMBAGA
+    ========================= */
+
+    .institutions {
+      background: white;
+    }
+
+    .institution-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .institution-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      transition: 0.3s;
+      background: white;
+    }
+
+    .institution-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(15,23,42,0.07);
+    }
+
+    .institution-number {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .institution-card h3 {
+      color: var(--dark);
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .institution-card p {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    /* =========================
+       PROGRAM
+    ========================= */
+
+    .programs {
+      background: var(--dark);
+      color: white;
+    }
+
+    .programs .section-header h2 {
+      color: white;
+    }
+
+    .programs .section-header p {
+      color: #94a3b8;
+    }
+
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .program-card {
+      padding: 28px 22px;
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 10px;
+      background: rgba(255,255,255,0.025);
+      transition: 0.3s;
+    }
+
+    .program-card:hover {
+      border-color: rgba(214,168,79,0.5);
+      transform: translateY(-4px);
+    }
+
+    .program-card span {
+      font-size: 28px;
+    }
+
+    .program-card h3 {
+      margin: 15px 0 8px;
+      font-size: 17px;
+    }
+
+    .program-card p {
+      color: #94a3b8;
+      font-size: 13px;
+    }
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .stats {
+      background: #f8fafc;
+      padding: 55px 25px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+
+    .stat {
+      padding: 20px;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--dark);
+      font-size: 38px;
+    }
+
+    .stat span {
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    /* =========================
+       ORGANIZATION
+    ========================= */
+
+    .organization {
+      background: white;
+    }
+
+    .org-box {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .org-level {
+      padding: 18px;
+      margin: 10px auto;
+      border-radius: 8px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      max-width: 500px;
+    }
+
+    .org-level.main {
+      background: var(--dark);
+      color: white;
+      border-color: var(--dark);
+      font-weight: bold;
+    }
+
+    .org-level span {
+      display: block;
+      font-size: 12px;
+      color: #94a3b8;
+      margin-top: 3px;
+    }
+
+    /* =========================
+       GALLERY
+    ========================= */
+
+    .gallery {
+      background: var(--light);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .gallery-item {
+      height: 220px;
+      border-radius: 12px;
+      overflow: hidden;
+      background:
+        linear-gradient(135deg, #0f172a, #334155);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 20px;
+      border: 1px solid var(--border);
+    }
+
+    .gallery-item div {
+      opacity: 0.8;
+    }
+
+    .gallery-item strong {
+      display: block;
+      color: var(--gold-light);
+      margin-bottom: 5px;
+    }
+
+    /* =========================
+       CONTACT
+    ========================= */
+
+    .contact {
+      background: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .contact-card {
+      padding: 35px;
+      background: var(--light);
+      border-radius: 12px;
+    }
+
+    .contact-card h3 {
+      color: var(--dark);
+      margin-bottom: 18px;
+    }
+
+    .contact-item {
+      padding: 13px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .contact-item:last-child {
+      border-bottom: none;
+    }
+
+    .contact-item strong {
+      display: block;
+      color: var(--dark);
+      font-size: 14px;
+    }
+
+    .contact-item span {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      padding: 75px 25px;
+      background:
+        linear-gradient(135deg, #0b1220, #182235);
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      color: #94a3b8;
+      max-width: 650px;
+      margin: 0 auto 25px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      background: #050b15;
+      color: #94a3b8;
+      padding: 45px 25px 25px;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    footer h3,
+    footer h4 {
+      color: white;
+      margin-bottom: 13px;
+    }
+
+    footer p,
+    footer li {
+      font-size: 13px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin: 7px 0;
+    }
+
+    .copyright {
+      max-width: 1200px;
+      margin: 35px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      text-align: center;
+      font-size: 12px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        position: absolute;
+        top: 72px;
+        right: 0;
+        width: 100%;
+        background: var(--dark);
+        display: none;
+        flex-direction: column;
+        padding: 20px 25px;
+        gap: 15px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .hero-container,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        text-align: center;
+      }
+
+      .hero p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-card {
+        min-height: 320px;
+      }
+
+      .institution-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .program-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      section {
+        padding: 70px 18px;
+      }
+
+      .nav-container {
+        padding: 13px 18px;
+      }
+
+      .logo-text strong {
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 130px 18px 70px;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .hero p {
+        font-size: 15px;
+      }
+
+      .circle-main {
+        width: 240px;
+        height: 240px;
+      }
+
+      .circle-main::before {
+        width: 175px;
+        height: 175px;
+      }
+
+      .section-header h2 {
+        font-size: 30px;
+      }
+
+      .vision-grid,
+      .institution-grid,
+      .program-grid,
+      .gallery-grid,
+      .stats-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-box,
+      .vision-card,
+      .contact-card {
+        padding: 25px;
+      }
+
+      .stats-grid {
+        gap: 5px;
+      }
+
+      .stat strong {
+        font-size: 32px;
+      }
+
+      .gallery-item {
+        height: 190px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVBAR
+  ========================= -->
+
+  <nav>
+    <div class="nav-container">
+
+      <a href="#beranda" class="logo">
+        <div class="logo-symbol">S</div>
+
+        <div class="logo-text">
+          <strong>SAILENDRA NUSANTARA</strong>
+          <span>YAYASAN</span>
+        </div>
+      </a>
+
+      <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#visi">Visi & Misi</a></li>
+        <li><a href="#lembaga">Lembaga</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#organisasi">Organisasi</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- =========================
+       HERO
+  ========================= -->
+
+  <section class="hero" id="beranda">
+
+    <div class="hero-container">
+
+      <div>
+
+        <div class="hero-badge">
+          YAYASAN SAILENDRA NUSANTARA
+        </div>
+
+        <h1>
+          Membangun <span>Generasi</span>,<br>
+          Menguatkan Negeri.
+        </h1>
+
+        <p>
+          Yayasan Sailendra Nusantara hadir sebagai wadah pengabdian
+          dalam bidang pendidikan, sosial, kemanusiaan, pemberdayaan
+          masyarakat, dan pengembangan generasi masa depan.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#profil" class="btn btn-primary">
+            Mengenal Yayasan
+          </a>
+
+          <a href="#lembaga" class="btn btn-outline">
+            Lembaga Naungan
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-card">
+
+        <div class="circle-main">
+
+          <div class="circle-content">
+            <div class="big">S</div>
+
+            <h3>SAILENDRA</h3>
+
+            <p>
+              NUSANTARA
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PROFIL
+  ========================= -->
+
+  <section class="about" id="profil">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="section-label">
+          Tentang Kami
+        </div>
+
+        <h2>
+          Profil Yayasan
+        </h2>
+
+        <p>
+          Mengenal lebih dekat Yayasan Sailendra Nusantara
+          dan semangat pengabdian yang kami bangun.
+        </p>
+
+      </div>
+
+
+      <div class="about-grid">
+
+        <div class="about-box">
+
+          <h3>
+            Tentang Yayasan Sailendra Nusantara
+          </h3>
+
+          <p>
+            Yayasan Sailendra Nusantara merupakan yayasan yang
+            berkomitmen untuk memberikan kontribusi positif bagi
+            masyarakat melalui berbagai bidang pengabdian.
+          </p>
+
+          <p>
+            Yayasan menjadi wadah yang menaungi berbagai lembaga
+            dan program yang bergerak dalam bidang pendidikan,
+            sosial, kemanusiaan, serta pemberdayaan masyarakat.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <ul class="about-list">
+
+            <li>
+              Mengembangkan pendidikan yang berkualitas
+            </li>
+
+            <li>
+              Mendorong terbentuknya generasi berkarakter
+            </li>
+
+            <li>
+              Menumbuhkan kepedulian sosial dan kemanusiaan
+            </li>
+
+            <li>
+              Memberdayakan masyarakat secara berkelanjutan
+            </li>
+
+            <li>
+              Membangun kolaborasi untuk kemajuan bersama
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       VISI MISI
+  ========================= -->
+
+  <section class="vision" id="visi">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="section-label">
+          Arah & Tujuan
+        </div>
+
+        <h2>
+          Visi & Misi
+        </h2>
+
+        <p>
+          Menjadi landasan dalam setiap langkah dan program
+          Yayasan Sailendra Nusantara.
+        </p>
+
+      </div>
+
+
+      <div class="vision-grid">
+
+        <div class="vision-card">
+
+          <div class="vision-icon">
+            ◎
+          </div>
+
+          <h3>
+            Visi
+          </h3>
+
+          <p>
+            Menjadi yayasan yang terpercaya dalam membangun
+            generasi berkarakter, berilmu, mandiri, dan
+            berkontribusi bagi masyarakat serta bangsa.
+          </p>
+
+        </div>
+
+
+        <div class="vision-card">
+
+          <div class="vision-icon">
+            ✦
+          </div>
+
+          <h3>
+            Misi
+          </h3>
+
+          <p>
+            Menyelenggarakan dan mendukung berbagai kegiatan
+            pendidikan, sosial, kemanusiaan, pemberdayaan
+            masyarakat, serta pengembangan potensi generasi.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       LEMBAGA NAUNGAN
+  ========================= -->
+
+  <section class="institutions" id="lembaga">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="section-label">
+          Naungan Yayasan
+        </div>
+
+        <h2>
+          Lembaga & Unit
+        </h2>
+
+        <p>
+          Berbagai lembaga dan unit dapat dikembangkan
+          di bawah naungan Yayasan Sailendra Nusantara.
+        </p>
+
+      </div>
+
+
+      <div class="institution-grid">
+
+        <div class="institution-card">
+
+          <div class="institution-number">
+            01 / PENDIDIKAN
+          </div>
+
+          <h3>
+            Pondok Pesantren
+          </h3>
+
+          <p>
+            Lembaga pendidikan keagamaan dan pembinaan
+            karakter generasi.
+          </p>
+
+        </div>
+
+
+        <div class="institution-card">
+
+          <div class="institution-number">
+            02 / PENDIDIKAN
+          </div>
+
+          <h3>
+            Sekolah & Madrasah
+          </h3>
+
+          <p>
+            Unit pendidikan formal untuk mendukung
+            pengembangan ilmu dan karakter peserta didik.
+          </p>
+
+        </div>
+
+
+        <div class="institution-card">
+
+          <div class="institution-number">
+            03 / PENDIDIKAN
+          </div>
+
+          <h3>
+            Pendidikan Masyarakat
+          </h3>
+
+          <p>
+            Program pendidikan, pelatihan, dan pengembangan
+            keterampilan masyarakat.
+          </p>
+
+        </div>
+
+
+        <div class="institution-card">
+
+          <div class="institution-number">
+            04 / SOSIAL
+          </div>
+
+          <h3>
+            Lembaga Sosial
+          </h3>
+
+          <p>
+            Wadah kegiatan sosial dan kepedulian terhadap
+            masyarakat yang membutuhkan.
+          </p>
+
+        </div>
+
+
+        <div class="institution-card">
+
+          <div class="institution-number">
+            05 / KEMANUSIAAN
+          </div>
+
+          <h3>
+            Program Kemanusiaan
+          </h3>
+
+          <p>
+            Kegiatan kemanusiaan dan kepedulian sosial
+            bagi masyarakat.
+          </p>
+
+        </div>
+
+
+        <div class="institution-card">
+
+          <div class="institution-number">
+            06 / PEMBERDAYAAN
+          </div>
+
+          <h3>
+            Pemberdayaan Masyarakat
+          </h3>
+
+          <p>
+            Program pengembangan potensi masyarakat menuju
+            kemandirian dan kesejahteraan.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PROGRAM
+  ========================= -->
+
+  <section class="programs" id="program">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="section-label">
+          Fokus Pengabdian
+        </div>
+
+        <h2>
+          Program Yayasan
+        </h2>
+
+        <p>
+          Beberapa bidang program yang dapat dikembangkan
+          oleh Yayasan Sailendra Nusantara.
+        </p>
+
+      </div>
+
+
+      <div class="program-grid">
+
+        <div class="program-card">
+
+          <span>📚</span>
+
+          <h3>
+            Pendidikan
+          </h3>
+
+          <p>
+            Mendukung akses dan peningkatan kualitas pendidikan.
+          </p>
+
+        </div>
+
+
+        <div class="program-card">
+
+          <span>🤝</span>
+
+          <h3>
+            Sosial
+          </h3>
+
+          <p>
+            Membangun kepedulian dan solidaritas masyarakat.
+          </p>
+
+        </div>
+
+
+        <div class="program-card">
+
+          <span>❤️</span>
+
+          <h3>
+            Kemanusiaan
+          </h3>
+
+          <p>
+            Menghadirkan kepedulian dalam berbagai kondisi.
+          </p>
+
+        </div>
+
+
+        <div class="program-card">
+
+          <span>🌱</span>
+
+          <h3>
+            Pemberdayaan
+          </h3>
+
+          <p>
+            Mendorong masyarakat menjadi lebih mandiri.
+          </p>
+
+        </div>
+
+
+        <div class="program-card">
+
+          <span>💡</span>
+
+          <h3>
+            Pengembangan Generasi
+          </h3>
+
+          <p>
+            Mendorong potensi generasi muda untuk berkembang.
+          </p>
+
+        </div>
+
+
+        <div class="program-card">
+
+          <span>🏘️</span>
+
+          <h3>
+            Masyarakat
+          </h3>
+
+          <p>
+            Mengembangkan kegiatan yang berdampak positif.
+          </p>
+
+        </div>
+
+
+        <div class="program-card">
+
+          <span>🌾</span>
+
+          <h3>
+            Kemandirian
+          </h3>
+
+          <p>
+            Mendukung program ekonomi dan kemandirian masyarakat.
+          </p>
+
+        </div>
+
+
+        <div class="program-card">
+
+          <span>🌏</span>
+
+          <h3>
+            Kolaborasi
+          </h3>
+
+          <p>
+            Membuka ruang kerja sama untuk manfaat bersama.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       STATISTIK
+  ========================= -->
+
+  <section class="stats">
+
+    <div class="container">
+
+      <div class="stats-grid">
+
+        <div class="stat">
+          <strong>01</strong>
+          <span>Yayasan</span>
+        </div>
+
+        <div class="stat">
+          <strong>06+</strong>
+          <span>Bidang Pengabdian</span>
+        </div>
+
+        <div class="stat">
+          <strong>∞</strong>
+          <span>Peluang Kolaborasi</span>
+        </div>
+
+        <div class="stat">
+          <strong>100%</strong>
+          <span>Untuk Kemanfaatan</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       ORGANISASI
+  ========================= -->
+
+  <section class="organization" id="organisasi">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="section-label">
+          Tata Kelola
+        </div>
+
+        <h2>
+          Struktur Organisasi
+        </h2>
+
+        <p>
+          Struktur organisasi Yayasan Sailendra Nusantara.
+        </p>
+
+      </div>
+
+
+      <div class="org-box">
+
+        <div class="org-level main">
+          YAYASAN SAILENDRA NUSANTARA
+          <span>Yayasan Induk</span>
+        </div>
+
+        <div class="org-level">
+          Pembina
+          <span>Data akan diperbarui</span>
+        </div>
+
+        <div class="org-level">
+          Pengurus
+          <span>Data akan diperbarui</span>
+        </div>
+
+        <div class="org-level">
+          Pengawas
+          <span>Data akan diperbarui</span>
+        </div>
+
+        <div class="org-level">
+          Lembaga & Unit di Bawah Naungan
+          <span>Pesantren • Sekolah • Sosial • Program Masyarakat</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       GALERI
+  ========================= -->
+
+  <section class="gallery">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="section-label">
+          Dokumentasi
+        </div>
+
+        <h2>
+          Galeri Kegiatan
+        </h2>
+
+        <p>
+          Dokumentasi kegiatan Yayasan Sailendra Nusantara
+          akan ditampilkan di bagian ini.
+        </p>
+
+      </div>
+
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item">
+          <div>
+            <strong>KEGIATAN 01</strong>
+            Dokumentasi Yayasan
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div>
+            <strong>KEGIATAN 02</strong>
+            Dokumentasi Pendidikan
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div>
+            <strong>KEGIATAN 03</strong>
+            Dokumentasi Sosial
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div>
+            <strong>KEGIATAN 04</strong>
+            Dokumentasi Masyarakat
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div>
+            <strong>KEGIATAN 05</strong>
+            Dokumentasi Kemanusiaan
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <div>
+            <strong>KEGIATAN 06</strong>
+            Dokumentasi Program
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================= -->
+
+  <section class="contact" id="kontak">
+
+    <div class="container">
+
+      <div class="section-header">
+
+        <div class="section-label">
+          Hubungi Kami
+        </div>
+
+        <h2>
+          Kontak Yayasan
+        </h2>
+
+        <p>
+          Informasi kontak resmi Yayasan Sailendra Nusantara
+          akan ditambahkan setelah data tersedia.
+        </p>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+
+          <h3>
+            Informasi Yayasan
+          </h3>
+
+          <div class="contact-item">
+            <strong>Alamat</strong>
+            <span>Alamat yayasan akan diperbarui</span>
+          </div>
+
+          <div class="contact-item">
+            <strong>Email</strong>
+            <span>Email resmi akan diperbarui</span>
+          </div>
+
+          <div class="contact-item">
+            <strong>Telepon / WhatsApp</strong>
+            <span>Nomor resmi akan diperbarui</span>
+          </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+          <h3>
+            Mari Berkolaborasi
+          </h3>
+
+          <p>
+            Yayasan Sailendra Nusantara terbuka terhadap
+            kerja sama yang memiliki tujuan positif bagi
+            pendidikan, sosial, kemanusiaan, dan masyarakat.
+          </p>
+
+          <br>
+
+          <a href="#beranda" class="btn btn-primary">
+            Kembali ke Beranda
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CTA
+  ========================= -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>
+        Bersama Membangun Masa Depan
+      </h2>
+
+      <p>
+        Setiap langkah kecil dapat menjadi bagian dari
+        perubahan besar untuk generasi dan masyarakat.
+      </p>
+
+      <a href="#kontak" class="btn btn-primary">
+        Hubungi Yayasan
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <div>
+
+        <h3>
+          YAYASAN SAILENDRA NUSANTARA
+        </h3>
+
+        <p>
+          Membangun generasi, menguatkan negeri melalui
+          pendidikan, sosial, kemanusiaan, dan pemberdayaan
+          masyarakat.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          Navigasi
+        </h4>
+
+        <ul>
+          <li><a href="#profil">Profil</a></li>
+          <li><a href="#visi">Visi & Misi</a></li>
+          <li><a href="#lembaga">Lembaga</a></li>
+          <li><a href="#program">Program</a></li>
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          Informasi
+        </h4>
+
+        <ul>
+          <li>Website Resmi</li>
+          <li>Yayasan Sailendra Nusantara</li>
+          <li>Indonesia</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © <span id="year"></span>
+      Yayasan Sailendra Nusantara.
+      All Rights Reserved.
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
+  <script>
+
+    function toggleMenu() {
+
+      const navLinks = document.getElementById("navLinks");
+
+      navLinks.classList.toggle("active");
+
+    }
+
+
+    document.querySelectorAll(".nav-links a").forEach(function(link) {
+
+      link.addEventListener("click", function() {
+
+        document.getElementById("navLinks").classList.remove("active");
+
+      });
+
+    });
+
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+  </script>
+
+</body>
+</html>
